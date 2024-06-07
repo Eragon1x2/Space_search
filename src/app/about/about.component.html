@@ -1,0 +1,10 @@
+<div class="about_block">
+    <img class="about_img" [src]="product.image_url" alt="">
+
+<div class="about_text-block">
+    <p><img src="assets/date.svg" alt="">{{product.updated_at}}</p>
+    <h1>{{product.title}}</h1>
+    <p>{{product.summary}}</p>
+</div>
+<a (click)="onGoBack()"><img src="assets/arrow.svg" alt="">Back to homepage</a>
+</div>

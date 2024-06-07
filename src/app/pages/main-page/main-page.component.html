@@ -1,0 +1,11 @@
+<div class="search-container">
+    <p>Filter by keywords</p>
+    <form class="search-box">
+        <button (click)="loadByTitle()"> 
+            <img src="assets/search.svg" width="10" alt="Search">
+        </button>
+        <input type="text" name="title" [(ngModel)]="entered_text" placeholder="The most successful IT companies in 2020">
+    </form>
+  </div>
+<app-results [count]="list.length"></app-results>
+<app-list [list]="list" (stateChanged)="loadMore()"/>

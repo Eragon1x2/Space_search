@@ -1,0 +1,18 @@
+<ul class="articles-list">
+    @for (item of list; track item.id) {
+      <li (click)="toNextPage(item.id)">
+          <img [src]="item.image_url" alt="">
+          <div>
+            <p class="article-date"><img src="assets/date.svg" alt="">{{item.published_at}}</p>
+            <h5 class="article-title">{{item.title}}</h5>
+            <p class="article_summary">{{item.summary}}</p>
+          <div class="article_more">
+            <p>Read more <span><img src="assets/arrow.svg" alt=""></span></p>
+          </div>
+          </div>
+  
+      </li>
+    }
+  </ul>
+
+  <p (click)="onloadMore()" class="load-more">Load more</p>

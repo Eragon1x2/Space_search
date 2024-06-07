@@ -1,0 +1,124 @@
+.articles-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    
+}
+.articles-list li {
+    position: relative;
+    width: 400px;
+    height: 530px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    cursor: pointer;
+}
+.articles-list li div {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.articles-list img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.article-date {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+
+color: #363636;
+
+opacity: 0.6;
+margin-top: 30px;
+display: flex;
+align-items: center;
+}
+.article-date img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.article-title {
+    /* The 2020 World's Most Valuable Brands */
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: #363636;
+margin-top: 20px;
+
+
+}
+.article_summary {
+    width: 360px;
+    height: 70px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+overflow: hidden;
+/* or 24px */
+margin-top: 20px;
+
+color: #363636;
+}
+.article_more {
+    position: absolute;
+    bottom: 30px;
+    left:0;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #363636;
+}
+.article_more p {
+    display: flex;
+    align-items: center;
+}
+.article_more img {
+    width: 20px;
+    height: 20px;
+}
+.article_more span {
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+}
+
+
+
+.load-more { 
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    text-decoration: underline;
+    /* identical to box height */
+    
+    color: #363636;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
